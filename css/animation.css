@@ -1,0 +1,133 @@
+/* .box {
+    display: grid;
+    place-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: deeppink;
+    font-size: 64px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+.box:nth-child(2) {
+    display: grid;
+    place-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: skyblue;
+    font-size: 64px;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+body {
+    display: grid;
+    place-content: center;
+    display: grid;
+    place-content: center;
+    gap: 25px;
+}
+.box:hover {
+    background-color: skyblue;
+    transform: scale(1.2);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(100px);
+    }
+    66% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(360deg);
+    }
+    66% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+ */
+body {
+    justify-items: center;
+    display: grid;
+    gap: 25px;
+}
+ .box {
+    display: grid;
+    place-content: center;
+    width: 200px;
+    height: 200px;
+    font-size: 64px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 1s;
+ }
+ .box:nth-child(1) {
+    background-color: chartreuse;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+ }
+ .box:nth-child(2) {
+    background-color: deeppink;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+ }
+ .box:nth-child(3) {
+    background-color: skyblue;
+ }
+ .box:hover {
+    background-color: coral;
+    transform: scale(1.5);
+    transform: translateX(150px);
+ }
+
+ @keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(100px);
+    }
+    66% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+ }
+
+  @keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(45deg);
+    }
+    66% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+ }

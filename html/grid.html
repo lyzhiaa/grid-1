@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinterest Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      column-count: 4;
+      column-gap: 1rem;
+      padding: 1rem;
+    }
+
+    .container > div {
+      background: #eee;
+      margin-bottom: 1rem;
+      break-inside: avoid;
+      border-radius: 10px;
+      padding: 1rem;
+      height: auto;
+    }
+
+    /* Different heights for demo */
+    .box-1 { height: 100px; }
+    .box-2 { height: 150px; }
+    .box-3 { height: 80px; }
+    .box-4 { height: 200px; }
+    .box-5 { height: 120px; }
+    .box-6 { height: 160px; }
+    .box-7 { height: 90px; }
+    .box-8 { height: 180px; }
+    .box-9 { height: 110px; }
+    .box-10 { height: 130px; }
+    .box-11 { height: 100px; }
+    .box-12 { height: 150px; }
+    .box-13 { height: 80px; }
+    .box-14 { height: 200px; }
+    .box-15 { height: 120px; }
+    .box-16 { height: 160px; }
+    .box-17 { height: 90px; }
+    .box-18 { height: 180px; }
+    .box-19 { height: 110px; }
+    .box-20 { height: 130px; }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .container {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box-1">Box 1</div>
+    <div class="box-2">Box 2</div>
+    <div class="box-3">Box 3</div>
+    <div class="box-4">Box 4</div>
+    <div class="box-5">Box 5</div>
+    <div class="box-6">Box 6</div>
+    <div class="box-7">Box 7</div>
+    <div class="box-8">Box 8</div>
+    <div class="box-9">Box 9</div>
+    <div class="box-10">Box 10</div>
+    <div class="box-11">Box 11</div>
+    <div class="box-12">Box 12</div>
+    <div class="box-13">Box 13</div>
+    <div class="box-14">Box 14</div>
+    <div class="box-15">Box 15</div>
+    <div class="box-16">Box 16</div>
+    <div class="box-17">Box 17</div>
+    <div class="box-18">Box 18</div>
+    <div class="box-19">Box 19</div>
+    <div class="box-20">Box 20</div>
+  </div>
+</body>
+</html>
